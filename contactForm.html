@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\practice\web_colt\HTML\ContactForm\contactForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+
+        <div> <img src="backgroundImage.jpg" alt="img"></div>
+        <form action="">
+            <h1>Contact form</h1>
+            <div id="para">
+                <p class="fill">Please fill in your details so that you can contact us</p>
+                <p class="name">
+                    <!--By using the name attribute it will take the value from us and submit to the databaase-->
+                    <label for="username">Enter Your Name</label>
+                    <input id="username" type="text" placeholder="Firstname" name="username">
+                    <input id="username" type="text" placeholder="Lastname" name="username">
+                    <!--or use name="q" nothing really matters-->
+                </p>
+
+                <p id="emailto">
+                    <label for="email">Enter Your Email</label>
+                    <input id="email" type="email" placeholder="Enter email" name="email">
+                </p>
+
+                <p id="mblnumber">
+                    <label for="number">Mobile Number</label>
+                    <input id="number" type="number" placeholder="Enter your Number" name="number">
+                </p>
+                <p id="msgsub">
+                    <label for="message">Message Subject</label>
+                    <select name="message" id="message">
+                        <option value="">Select</option>
+                        <option value="">Complaint</option>
+                        <option value="">Query</option>
+                        <option value="">Request</option>
+                        <option value="">Other</option>
+                    </select>
+                </p>
+
+                <p id="messageFill">
+                    <label for="requests">Message</label>
+
+                    <textarea name="request" id="requests" cols="30" rows="10"
+                        placeholder="Enter your meassage here"></textarea>
+
+                </p>
+
+                <p id="address">
+                    Your Address:
+
+                    <label for="city">City</label>
+                    <input id="city" type="text" placeholder="" name="city">
+                    <label for="country">Country</label>
+                    <input id="country" type="text" placeholder="" name="country">
+
+
+
+                    <!--or use name="q" nothing really matters-->
+                </p>
+                <p id="pincode1">
+                    <label for="street">street</label>
+                    <input id="street" type="text" placeholder="" name="street">
+                    <label for="pincode">Pincode</label>
+                    <input id="pincode" type="number" placeholder="" name="pincode">
+                </p>
+
+                <p id="line" style="margin-bottom: 0px;">
+                    <input type="text">
+                </p>
+
+
+                <button>submit</button>
+
+
+        </form>
+
+    </div>
+    </div>
+</body>
+
+</html>
