@@ -18,30 +18,33 @@
     <div id="container">
 
         <div> <img src="backgroundImage.jpg" alt="img"></div>
-        <form action="">
+        <form action="/abhishek">
             <h1>Contact form</h1>
             <div id="para">
                 <p class="fill">Please fill in your details so that you can contact us</p>
                 <p class="name">
                     <!--By using the name attribute it will take the value from us and submit to the databaase-->
                     <label for="username">Enter Your Name</label>
-                    <input id="username" type="text" placeholder="Firstname" name="username">
-                    <input id="username" type="text" placeholder="Lastname" name="username">
+                    <input id="username" type="text" placeholder="Firstname" name="username" minlength="4"
+                        maxlength="20" required>
+                    <input id="username" type="text" placeholder="Lastname" name="username" minlength="4" maxlength="20"
+                        required>
                     <!--or use name="q" nothing really matters-->
                 </p>
 
                 <p id="emailto">
                     <label for="email">Enter Your Email</label>
-                    <input id="email" type="email" placeholder="Enter email" name="email">
+                    <input id="email" type="email" placeholder="Enter email" name="email" required>
                 </p>
 
                 <p id="mblnumber">
                     <label for="number">Mobile Number</label>
-                    <input id="number" type="number" placeholder="Enter your Number" name="number">
+                    <input id="number" type="number" placeholder="Enter your Number" name="number" minlength="10"
+                        required>
                 </p>
                 <p id="msgsub">
                     <label for="message">Message Subject</label>
-                    <select name="message" id="message">
+                    <select name="message" id="message" required>
                         <option value="">Select</option>
                         <option value="">Complaint</option>
                         <option value="">Query</option>
@@ -53,8 +56,8 @@
                 <p id="messageFill">
                     <label for="requests">Message</label>
 
-                    <textarea name="request" id="requests" cols="30" rows="10"
-                        placeholder="Enter your meassage here"></textarea>
+                    <textarea name="request" id="requests" cols="30" rows="10" placeholder="Enter your message here"
+                        required></textarea>
 
                 </p>
 
@@ -62,9 +65,9 @@
                     Your Address:
 
                     <label for="city">City</label>
-                    <input id="city" type="text" placeholder="" name="city">
+                    <input id="city" type="text" placeholder="" name="city" required>
                     <label for="country">Country</label>
-                    <input id="country" type="text" placeholder="" name="country">
+                    <input id="country" type="text" placeholder="" name="country" required>
 
 
 
@@ -72,9 +75,9 @@
                 </p>
                 <p id="pincode1">
                     <label for="street">street</label>
-                    <input id="street" type="text" placeholder="" name="street">
+                    <input id="street" type="text" placeholder="" name="street" required>
                     <label for="pincode">Pincode</label>
-                    <input id="pincode" type="number" placeholder="" name="pincode">
+                    <input id="pincode" type="number" placeholder="" name="pincode" minlength="6" maxlength="6">
                 </p>
 
                 <p id="line" style="margin-bottom: 0px;">
